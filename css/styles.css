@@ -23,6 +23,8 @@ SECCIONES DEL CSS
 * @media Queries
 * Buttons
 
+* Efectos y transformaciones
+
 */
 
 *{
@@ -659,6 +661,7 @@ footer h4{
     margin-top: 10px;
 }
 
+
 .botonAzul {
     min-width: 130px;
     height: 40px;
@@ -685,6 +688,36 @@ footer h4{
   }
 
   /*****************************************************/
+  /* EFECTOS */
+
+  /*Clase para girar imágenes */
+  .giroImagen {
+    transition: transform .7s ease-in-out;
+  }
+  .giroImagen:hover {
+    transform: rotate(360deg);
+  }
+
+  /*Clase para dar efecto de tamaño aumentado*/
+  .escaloElemento:hover {
+      -webkit-transform:scale(1.3);
+      transform:scale(1.3);
+    }
+  .escaloElemento {
+      overflow:hidden;
+    }
+
+
+     /*Clase para dar efecto de tamaño disminuido*/
+    .disminuyoElemento:hover {
+        -webkit-transform:scale(1.3);
+        transform:scale(0.8);
+    }
+    .disminuyoElemento {
+        overflow:hidden;
+    }
+
+
 
   @keyframes bounceIn{
     0%{
