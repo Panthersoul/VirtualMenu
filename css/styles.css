@@ -160,7 +160,7 @@ SECCIONES DEL CSS
     top: 20%;
 
     /* Agrego una animacion personalizada usando KeyFrame*/
-    animation-name: bounceIn;
+    animation-name: saltar;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -698,15 +698,23 @@ footer h4{
     transform: rotate(360deg);
   }
 
-  /*Clase para dar efecto de tamaño aumentado*/
-  .escaloElemento:hover {
+    /*Clase para dar efecto de tamaño aumentado*/
+    .escaloElemento:hover {
       -webkit-transform:scale(1.3);
       transform:scale(1.3);
     }
-  .escaloElemento {
+    .escaloElemento {
       overflow:hidden;
     }
 
+    .saltaElemento
+    {
+        
+        animation-name: saltar;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 
      /*Clase para dar efecto de tamaño disminuido*/
     .disminuyoElemento:hover {
@@ -717,9 +725,22 @@ footer h4{
         overflow:hidden;
     }
 
+    .deslizarContenido{
+        animation-duration: 1.5s;
+        animation-name: deslizar;
+    }
 
+    .deslizarDerecha{
+        animation-name: entrada-derecha;
+        animation-duration: 1.5s;
+    }
 
-  @keyframes bounceIn{
+    .deslizarIzquierda{
+        animation-name: entrada-izquierda;
+        animation-duration: 1.5s;
+    }
+
+  @keyframes saltar{
     0%{
       opacity: 0;
       transform: scale(0.3) translate3d(0,0,0);
@@ -737,3 +758,33 @@ footer h4{
       transform: scale(1) translate3d(0,0,0);
     }
   }
+  
+  @keyframes deslizar {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  @keyframes entrada-izquierda {
+    0% {
+        transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+        
+    @keyframes entrada-derecha {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
