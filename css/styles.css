@@ -156,6 +156,13 @@ SECCIONES DEL CSS
 .portada .imagenPortada{
     position: relative;
     top: 20%;
+
+    /* Agrego una animacion personalizada usando KeyFrame*/
+    animation-name: bounceIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
 }
 
 .textoPortada{
@@ -675,4 +682,25 @@ footer h4{
   .botonAzul:active {
     box-shadow: 0 0 #4433ff;
     top: 5px;
+  }
+
+  /*****************************************************/
+
+  @keyframes bounceIn{
+    0%{
+      opacity: 0;
+      transform: scale(0.3) translate3d(0,0,0);
+    }
+    50%{
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80%{
+      opacity: 1;
+      transform: scale(0.89);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(1) translate3d(0,0,0);
+    }
   }
