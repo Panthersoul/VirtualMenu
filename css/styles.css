@@ -1,164 +1,41 @@
-/* 
-
-SECCIONES DEL CSS
----------------------
-
-* Reglas Generales
-    Formateo
-    Margenes
-    Alineaciones
-    GRID
-
-* Navigation
-
-* Page INDEX 
-    * Portada
-    * Cuerpo
-    * Como Lo Hacemos
-* Page ABOUT
-* Page SERVICES
-* Page CONTACT
-
-* Footer
-* @media Queries
-* Buttons
-
-* Efectos y transformaciones
-
-*/
-
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* CODIGO GLOBAL*/
-.margen40{
-    margin: 40px;
-}
-
-.margen20{
-    margin: 20px;
-}
-
-/*Este se utiliza únicamente en el CONTACTO, para tirar abajo el footer*/
-.margenInferior100
-{
-    margin-bottom: 100px;
-}
-
-.margenBajo40{
-    margin-bottom: 40px;
-}
-
-.padding20{
-    padding: 20px;
-}
-
-.centrado{
-    text-align: center;
-}
-
-.ancho60{
-    width: 60%;
-}
-
-.bordeRedondo{
-    border-radius: 15px;
-}
-
-.flexCentrado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main{
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "navBar"
-    "portada"
-    "cuerpo"
-    "comoHacemos"
-    "footer"
-    ;
-}
-
-/* Barra de Menú*/
-.navBar{
-    grid-area: navBar;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background-color: rgb(238, 228, 96);
-    
-
-}
-.navBar ol{
-    display: flex;
-    flex-direction: row;   
-    padding-top: 10px;
-}
-.navBar li{
-    text-decoration: none;
-    list-style: none;
-    margin-right: 10px;
-    padding-top: 2%;
-    transition: "font-size" 1s;
-}
-
-.navBar a{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-}
-
-.navBar a:hover{
-    
-    color: rgb(151, 5, 5);
-    
-}
-.navBar li:hover{
-    font-size: larger ;
-}
-
-.soloResponsive{
-    display: none;
+    scroll-behavior: smooth !important;
 }
 
 
-/********/
+/*
+navbar INDEX
+*/
+.navbar{
+    background-color: rgb(238, 228, 96) !important;
+}
 
 /*PORTADA*/
-   .portada{
+.portada{
     height: 100vh;
-    grid-area: portada;    
-    display: flex;
+    display: block;
 }
 
-.portada .altoAmarillo{
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+
+.fondoAmarillo{
     background-color: rgb(238, 228, 96);
 }
 
-.portada img{
-    padding: 10px;
+.fondoNegro{
+    background-color: rgb(51, 49, 49);
 }
 
-.portada .imagenPortada{
-    position: relative;
-    top: 20%;
+.colorBlanco{
+    color: white;
+}
 
+.alto50{
+    height: 50px;
+}
+
+.imagenPortada{
+    width: 50%;
     /* Agrego una animacion personalizada usando KeyFrame*/
     animation-name: saltar;
     animation-duration: 1s;
@@ -167,491 +44,177 @@ SECCIONES DEL CSS
 
 }
 
-.textoPortada{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-}
-/*************/
-
-/*Cuerpo Tres Columnas*/ 
-
-.cuerpo{
-    grid-area: cuerpo;
+article{
+    text-align: justify!important;
 }
 
-.tresColumnas div{
-    width: 20%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 20px;
-    
+footer h6{
+    margin: none;
+    padding: 5px;
 }
 
-.tresColumnas h3{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.tresColumnas p {
-    
-    text-align: justify;    
-
-}
-/***************/
-
-
-/* Como lo hacemos */ 
-
-.comoHacemos{
-    grid-area: comoHacemos;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-           
-    
+#comoHacemos{
+    color: white;
     /*Con el linear gradient oscurezco la imagen de fondo*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("../assets/pexels-anna-guerrero-1765005.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 }
-.contenidoComoHacemos{
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
-}
-.contenidoComoHacemos p{
-    color: rgb(223, 223, 223);
-    margin-top: 25px;
-}
-.contenidoComoHacemos h1{
-    color: rgb(223, 223, 223);
-    margin-top: 25px;
-}
-/**************/
-/* Page ABOUT */
 
-.mainAbout{
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "navBar"
-        "tituloAbout"
-        "cuerpo"
-        "cuerpo2"
-        "footer";
-}
+/*************************/
 
-.tituloAbout{
-    grid-area: tituloAbout;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-
-}
-
-.cuerpoAbout{
-    grid-area: cuerpo;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-/********************************/
-
-/* Page SERVICES*/
-
-.mainService{
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "navBar"
-        "texto"
-        "video"
-        "plantilla"
-        "footer";
-}
-
-.texto{
-    grid-area: texto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.texto section{
-    width: 70%;
-}
-.texto section h1{
-    margin-top: 15px;
-    font-size: xx-large;
-}
-.texto section p{
-    padding-top: 15px;
-}
-
-.video{
-    grid-area: video;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-.video section{
-    margin-top: 20px;
-}
-.tamañoVideo{
-    width: 560px;
-    height: 315px;
-}
-.plantilla{
-    grid-area: plantilla;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;    
-}
-.plantilla section{
-    width: 70%;
-}
-
-
-/*******************************/
-
-/* Page COMPROMISE */
-
-   .mainCompromise{
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto;
-        grid-template-areas: 
-            "navBar"
-            "elTextoCompromise"
-            "imagenesCompromise"
-            "footer";
-    }
-    .elTextoCompromise{
-        grid-area: elTextoCompromise;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .elTextoCompromise section article h1{
-        font-size: xx-large;
-    }
-    .textoCompromiso p{
-        margin: 10px;
-    }
-    .textoCompromiso{
+@media (max-width: 576px) { 
+    article img{
         width: 70%;
     }
-    
-    .imagenesCompromise{
-        grid-area: imagenesCompromise;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-    }
-    .imgCompromiso img{
-        padding: 15px;
+
+    .noResponsive{
+        display: none;
     }
 
-
-/******************************/
-/* Page CONTACT*/
-    
-.mainContact{
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "navBar"
-        "tituloContact"
-        "cuerpo"
-        "footer";
-}
-
-.tituloContact{
-    grid-area: tituloContact;
-    text-align: center;
-    font-size: x-large;
-
-}
-.cuerpoContact{
-    grid-area: cuerpo;
-    display: flex;        
-    justify-content: center;        
-    text-align: center;
-}
-
-.formularioContacto{
-    grid-area: formularioConacto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.formCampo input, textarea{
-    padding: 8px;
-}
-.iconos{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 15px;
-}
-
-
-/******************************/
-
-
-/* FOOTER */
-/* El footer con fondo*/
-.footer{
-    grid-area: footer;
-    text-align: center;
-    color: white;
-    width: 100%;
-}
-.footer h3{
-    padding-top: 25px;
-}
-.footer img{
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-.footer h4{
-    background-color: black;
-    font-weight: normal;
-}
-
-/*Texo final*/
-footer{
-    text-align: center;
-    background-color: black;
-    color: white;
- 
-}
-footer h3{
-    margin-bottom: 10px;
-}
-footer h4{
-    font-weight: normal;
-}
-
-
-/*******************************************************/
-
-@media only screen and (min-height: 768px)
-  {
-    /* Sé que es un disparate, pero en mi monitor no se ve como quiero.*/ 
-    .portada .imagenPortada{
-        position: relative;
-        top: 30%;
-
+    .portada .fondoAmarillo{
+        height: 100vh;
+        background-color: rgb(238, 228, 96);
     }
-  }
 
-  @media only screen and (min-width: 1500px) and (max-width: 1500px)
-  {
-    /* Sé que es un disparate, pero en mi monitor no se ve como quiero.*/ 
-    .portada .imagenPortada{
-        position: relative;
-        top: 20%;
-
+    .imagenPortada{
+        margin-bottom: 50px;
+        width: 75%;
+        position: relative!important;
+        top: 10px;
     }
-  }
 
-
-@media (min-width: 1355) {
-        /*Tres columnas*/
-        .tresColumnas{
-            display: block;
-        }
-    
-        .tresColumnas p{
-            margin-bottom: 10px;
-        }
-        
-        .tresColumnas div {
-            width: 100%;
-        }
-     
-    
 }
+   
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+
+    .noResponsive{
+        display: none;
+    }
+
+    .portada .fondoAmarillo{
+        height: 100vh;
+        background-color: rgb(238, 228, 96);
+    }
+
+    .imagenPortada{
+        width: 55%;
+        margin-bottom: 45px;
+        position: relative!important;
+        top: 40px;
+    }
+
+    article img{
+        width: 70%;
+    }
+
+    .imgResponsive{
+        width: 50%;
+    }
+    
+
+ }
 
 /* Tablets en horizonal y escritorios normales */
-@media (min-width: 768px) and (max-width: 1350px) {  
+@media (min-width: 768px) {
     /* Clase para ocultar cuando estoy responsivo*/
     .noResponsive{
          display: none;
      }
 
-    /*Portada*/
-    .portada .imagenPortada img{
+
+     .imgResponsive{
+        width: unset;
+    }
+    
+
+    article img{
         width: 70%;
     }
-    .portada .imagenPortada{
-        position: relative;
-        top: 30%;
-    }
-
-    .portada .altoAmarillo{
-        height: 100%;
-    }
-    
-    .tresColumnas img{
-         
-            width: 100%;
-        
-    }
-
-}
- 
-/*Moviles en vertical y tablets*/
-@media (max-width: 767px) { 
-
-    .noResponsive767{
-        display: none;
-    }
-    .noResponsive{
-         display: none;
-     }
-
-     .soloResponsive{
-         display: block;
-     }
-
-     .serviceDirectionResponsive{
-         flex-direction: column;
-     }
-
-     .navBar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-     }
-
-     .navBar ol{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-     }
-     .navBar img{
-         padding-top: 15px;
-     }
-
 
     /*Portada*/
-    .portada .imagenPortada img{
-        width: 40%;
-    }
-    
-    .portada .imagenPortada{
-        position: unset;
-        margin-bottom: 50px;
-        
-    }
-
-    .portada .altoAmarillo{
-        height: 100%;
-        display: flex;
-        flex-direction: column ;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .portada .textoPortada{
-        text-align: center;
-    }
-
-    /*Tres columnas*/
-    .tresColumnas{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tresColumnas p{
-        margin-bottom: 10px;
-    }
-    
-    .tresColumnas div {
+    .fondoAmarillo img{
         width: 100%;
     }
-
-    .cuerpoAbout{
-        flex-direction: column;
-    }
-    .cuerpoAbout article{
-        flex-direction: column;
-    }
-
-    /*Services*/
-    .tamañoVideo{
-        width: 80%;
-        height: 80%;
+    
+    
+    .imagenPortada{
+        width: 100%;
+        position: relative!important;
+        top: 200px;
     }
 
-    /*Contacto orientación del form*/
-    .cuerpoContact{
-        flex-direction: column;
-    }
-    .logoResponsivoContact{
-        width: 25%;
+    .portada .fondoAmarillo{
+        height: 80vh;
+        background-color: rgb(238, 228, 96);
     }
 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .noResponsive{
+        display: unset;
+    }
+
+    .portada .fondoAmarillo{
+        height: 70vh;
+        background-color: rgb(238, 228, 96);
+    }
+
+    .imagenPortada{
+        position: relative!important;
+        top: 40px;
+    }
+
+    .fondoAmarillo img{
+        width: 100%;
+    }
+    
+    article img{
+        width: 70%;
+    }
 
  }
-  
-/*Moviles en vertical */
- @media (max-width: 480px) { 
-     /*Portada*/
-     .noResponsive{
-         display: none;
-     }
-
-    .portada .imagenPortada img{
-        width: 100%;
-        position: unset;
-        
-    }
-    .portada .imagenPortada{
-        
-        text-align: center;
-        margin-left: 50px;
-        position: unset;
-        
+ 
+ /* X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+    .portada .fondoAmarillo{
+        height: 80vh;
+        background-color: rgb(238, 228, 96);
     }
 
-    .portada .altoAmarillo{
-        display: flex;
-        flex-direction: column ;
-        justify-content: flex-start;
-        text-align: center;
-        padding-top: 20px;
+    .imagenPortada{
+        position: relative!important;
+        top: 40px;
     }
 
-    .width_100_Responsivo{
-        width: 100%;
+    .fondoAmarillo img{
+        width: 95%;
     }
-
 
   }
+ 
+ /*// XX-Large devices (larger desktops, 1400px and up) */
+ @media (min-width: 1400px) { 
+    .portada .fondoAmarillo{
+        height: 80vh;
+        background-color: rgb(238, 228, 96);
+    }
+
+    .imagenPortada{
+        position: relative!important;
+        top: 40px;
+        
+    }
+  }
+
+
 
 /*******************************************************/
 
@@ -687,7 +250,10 @@ footer h4{
     top: 5px;
   }
 
-  /*****************************************************/
+
+
+
+ /*****************************************************/
   /* EFECTOS */
 
   /*Clase para girar imágenes */
