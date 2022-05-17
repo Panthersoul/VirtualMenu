@@ -10,6 +10,10 @@ navbar INDEX
     background-color: rgb(238, 228, 96) !important;
 }
 
+.navbar-nav{
+    text-align: center;
+}
+
 /*PORTADA*/
 .portada{
     height: 100vh;
@@ -53,6 +57,8 @@ footer h6{
     padding: 5px;
 }
 
+
+
 #comoHacemos{
     color: white;
     /*Con el linear gradient oscurezco la imagen de fondo*/
@@ -85,6 +91,26 @@ footer h6{
         top: 10px;
     }
 
+    /*ABOUT*/
+ 
+    .about p{
+        text-align: justify;
+        margin: none !important;
+    }
+    .about h3{
+        text-align: center;
+    }
+    .about img{
+        text-align: center;
+    }
+    .about div {
+        text-align: center;
+    }
+
+    .about .row{
+        text-align: center;
+    }
+
 }
    
 
@@ -96,6 +122,7 @@ footer h6{
         display: none;
     }
 
+    
     .portada .fondoAmarillo{
         height: 100vh;
         background-color: rgb(238, 228, 96);
@@ -115,7 +142,24 @@ footer h6{
     .imgResponsive{
         width: 50%;
     }
-    
+    /*ABOUT*/    
+
+    .about p{
+        text-align: justify;
+        margin: none !important;
+    }
+    .about h3{
+        text-align: center;
+    }
+    .about img{
+        text-align: center;
+    }
+    .about div {
+        text-align: center;
+    }
+    .about .row{
+        text-align: center;
+    }
 
  }
 
@@ -125,7 +169,6 @@ footer h6{
     .noResponsive{
          display: none;
      }
-
 
      .imgResponsive{
         width: unset;
@@ -153,6 +196,26 @@ footer h6{
         background-color: rgb(238, 228, 96);
     }
 
+    /* about*/
+     /*ABOUT*/    
+
+     .about p{
+        text-align: unset;
+        margin: none;
+    }
+    .about h3{
+        text-align: unset;
+    }
+    .about img{
+        text-align: center;
+    }
+    .about div {
+        text-align: unset;
+    }
+    .about .row{
+        text-align: unset;
+    }
+
 
 }
 
@@ -160,6 +223,10 @@ footer h6{
 @media (min-width: 992px) { 
     .noResponsive{
         display: unset;
+    }
+
+    .soloResponsive{
+        display: none;
     }
 
     .portada .fondoAmarillo{
