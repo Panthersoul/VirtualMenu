@@ -38,6 +38,10 @@ navbar INDEX
     height: 50px;
 }
 
+.paddingLeft20{
+    padding-left: 20px;
+}
+
 .imagenPortada{
     width: 50%;
     /* Agrego una animacion personalizada usando KeyFrame*/
