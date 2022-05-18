@@ -16,10 +16,10 @@
 </head>
 <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-light sticky">
+            <nav class="navbar navbar-expand-lg bg-light fixed-top">
                 <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">Navbar</a>-->
-                <a href="../index.html"><img src="../assets/logoPortada.png" alt="Logo Image"></a>
+                <a href="../index.html"><img src="../assets/logoPortada.png" alt="Logo Image" class="px-3"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -42,60 +42,74 @@
                 </div>
             </nav>
         </header>
-    <main>
+    <main class="content pt-5">
+        <!-- Titulo -->
+        <div class="container mt-5">
+            <div class="row text-center">
+              <h2>Póngase en contacto con nosotros.</h2>
+            </div>
+        </div>
 
-    <!-- Titulo -->
-    <div class="tituloContact">
-        <h3 class="margen20 saltaElemento">Póngase en contacto con nosotros.</h3>
-    </div>
-    <!-- Cuerpo a la izquierda-->
-    <div class="cuerpoContact">
-        <div class="datos">
-            <section class="flexCentrado">
-                <article >
-                    <p class="margen20">
-                        Bien puede solicitar información, <br> pedir un presupuesto o simplemente apoyarnos.
-                    </p>
-                    <p class="margen20">
-                        ¿Contamos con un servicio de soporte técnico? 
-                    </p>
-                    <p class="centrado margen20"><strong>Claro que si! <br> 24 Hs - 7 dias de la semana.</strong></p>
-                    <div class="centrado iconos">
-                        <a href="tel:+111111111"><img src="../assets/wzp.png" alt="Wzp"></a>
-                        <a href="mailto:hol@hotmail.com"><img src="../assets/mail.png" alt="Mail"></a>
+        <!-- Separo en 2 columnas-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6  mt-5">
+                    <section class="d-flex justify-content-center">
+                        <article  class="text-justify">
+                            <p>
+                                Bien puede solicitar información, <br> pedir un presupuesto o simplemente apoyarnos.
+                            </p>
+                            <p>
+                                ¿Contamos con un servicio de soporte técnico? 
+                            </p>
+                            <div class="text-center">
+                                <p><strong>Claro que si! <br> 24 Hs - 7 dias de la semana.</strong></p>
+                            </div>
+                            <div class="col-12 text-center ">
+                                <div class="d-flex justify-content-center text-center mt-5">
+                                        <a href="tel:+111111111"><img src="../assets/wzp.png" alt="Wzp"></a>
+                                        <a href="mailto:hol@hotmail.com"><img src="../assets/mail.png" alt="Mail"></a>
+                                </div>
+                            </div>                            
+                        </article>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6  mt-5">
+                    <section>
+                        <article  class="d-flex justify-content-start px-5">
+                            <form action="#">
+                                <div class="formCampo margen20">
+                                    <input id="name" type="text" name="name" required="" placeholder="Nombre Completo" class="rounded px-3 mb-2">
+                                </div>
+                                <div class="formCampo margen20">
+                                    <input id="tel" type="text" name="tel" placeholder="Teléfono" class="rounded px-3 mb-2">
+                                </div>
+                                <div class="formCampo">                            
+                                    <input id="email" type="email" name="email" required="" placeholder="Email" class="rounded px-3 mb-2">
+                                </div>
+                                <div class="contactoMensaje margen20">
+                                    <textarea id="message" rows="4" name="message" required="" placeholder="Escriba aquí su mensaje" class="rounded px-3 mb-2"></textarea>
+                                </div>
+                                <input class="botonAzul" type="submit" value="Enviar">
+                            </form>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-center text-center">
+                    
+                    <div class="col-4">
+                        <img  src="../assets/logo120x120.png" alt="Logo" class="imgContacto">
                     </div>
-                </article>
-            </section>
-        </div>
-    
-        <!-- Formulario a la derecha -->
-        <div class="formularioContacto">
-            <section>
-                <article>
-                    <form action="#">
-                        
-                        <div class="formCampo margen20">
-                            <input id="name" type="text" name="name" required="" placeholder="Nombre Completo" class="bordeRedondo">
-                        </div>
-                        <div class="formCampo margen20">
-                            <input id="tel" type="text" name="tel" placeholder="Teléfono" class="bordeRedondo">
-                        </div>
-                        <div class="formCampo">                            
-                            <input id="email" type="email" name="email" required="" placeholder="Email" class="bordeRedondo">
-                        </div>
-                        <div class="contactoMensaje margen20">
-                            <textarea id="message" rows="4" name="message" required="" placeholder="Escriba aquí su mensaje" class="bordeRedondo"></textarea>
-                        </div>
-                        <input class="botonAzul" type="submit" value="Enviar">
-                    </form>
-                </article>
-            </section>
-        </div>
-    </div>
-    <div class="centrado saltaElemento">
-        <img class="logoResponsivoContact margen20 margenInferior100" src="../assets/logo120x120.png" alt="">
-    </div>
+                    
+                </div>
+            </div>
     </main>
+
+
     <footer class="fondoNegro mt-5">
         <div class="text-center mt-5">
             <h3 class="mt-3 pt-2 colorBlanco">Virtual Menú - Todos los derechos reservados</h3>
