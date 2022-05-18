@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: poppins, sans-serif;  
+  margin: 0px;
+}
+
+
 *{
     scroll-behavior: smooth !important;
 }
@@ -13,6 +21,8 @@ navbar INDEX
 .navbar-nav{
     text-align: center;
 }
+
+
 
 /*PORTADA*/
 .portada{
@@ -72,6 +82,8 @@ footer h6{
 
 }
 
+
+
 /*************************/
 
 @media (max-width: 576px) { 
@@ -95,6 +107,11 @@ footer h6{
         top: 10px;
     }
 
+    .margenTop30{
+        margin-top: 30px;
+    }
+
+
     /*ABOUT*/
  
     .about p{
@@ -113,6 +130,11 @@ footer h6{
 
     .about .row{
         text-align: center;
+    }
+
+    .tamañoVideo{
+        width: 360px;
+        height: 215px;
     }
 
 }
@@ -137,6 +159,10 @@ footer h6{
         margin-bottom: 45px;
         position: relative!important;
         top: 40px;
+    }
+
+    .margenTop30{
+        margin-top: 30px;
     }
 
     article img{
@@ -196,14 +222,13 @@ footer h6{
     }
 
     .portada .fondoAmarillo{
-        height: 80vh;
+        height: 70vh;
         background-color: rgb(238, 228, 96);
     }
 
-    /* about*/
-     /*ABOUT*/    
+    /*ABOUT*/    
 
-     .about p{
+    .about p{
         text-align: unset;
         margin: none;
     }
@@ -219,6 +244,12 @@ footer h6{
     .about .row{
         text-align: unset;
     }
+
+    
+.tamañoVideo{
+    width: 560px;
+    height: 315px;
+}
 
 
 }
@@ -247,6 +278,10 @@ footer h6{
         width: 100%;
     }
     
+    .img60{
+        width: 60%;
+    }
+
     article img{
         width: 70%;
     }
@@ -256,13 +291,17 @@ footer h6{
  /* X-Large devices (large desktops, 1200px and up) */
  @media (min-width: 1200px) {
     .portada .fondoAmarillo{
-        height: 80vh;
+        height: 75vh;
         background-color: rgb(238, 228, 96);
     }
 
     .imagenPortada{
         position: relative!important;
         top: 40px;
+    }
+
+    .img60{
+        width: unset;
     }
 
     .fondoAmarillo img{

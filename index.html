@@ -9,9 +9,9 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
-              <!-- <a class="navbar-brand" href="#">Navbar</a>-->
+              
               <a href="index.html"><img src="./assets/logoPortada.png" alt="Logo Image"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,17 +35,17 @@
             </div>
           </nav>
     </header>
-    <main>
+    <main class="content mt-5">
         <!-- Portada -->
         <div class="portada">
            <div class="fondoAmarillo">
                 <div class="container">
                     <div class="row justify-content-around align-items-center">
                         <div class="col-12 col-md-6 col-lg-6  mt-5">
-                            <img class="imagenPortada" src="./assets/imageHeader.svg" alt="Imagen de Portada">
+                            <img class="imagenPortada mt-3" src="./assets/imageHeader.svg" alt="Imagen de Portada">
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 ">
-                            <h1  class="deslizarContenido">Virtual Menú</h1>
+                            <h1  class="deslizarContenido margenTop30">Virtual Menú</h1>
                             <p class="deslizarContenido">Digitalizamos el menú de su negocio <br> y creamos un Código QR que permite a sus clientes <br> leer la carta en sus dispositivos personales.</p>
                             <div class="containButton deslizarContenido">
                                 <a href="#obtenerPerspectiva"><button class="botonAzul">Descubrir</button></a>
@@ -117,14 +117,14 @@
                     </div>
 
                     <div class="row justify-content-center">
-                            <div class="col-12 col-md-4 col-lg-3 text-center imgResponsive">
-                                <img src="./assets/qr-code.png" alt="Escaneo" class="mx-5 rounded ">
+                            <div class="col-12 col-md-4 col-lg-3 text-center imgResponsive d-flex align-items-center justify-content-center">
+                                <img src="./assets/qr-code.png" alt="Escaneo" class=" rounded">
                             </div>
-                            <div class="col-12 col-md-4 col-lg-3  text-center">
-                                <img src="./assets/arrow.png" alt="" class=" mx-5 rounded giroImagen noResponsive">
+                            <div class="col-12 col-md-12 col-lg-3  text-center  noResponsive d-flex align-items-center justify-content-center">
+                                <img src="./assets/arrow.png" alt="Flecha" class=" rounded noResponsive giroImagen img60">
                             </div>
-                            <div class="col-12 col-md-4 col-lg-3 text-center">
-                                <img src="./assets/qr-menu.png" alt="Menu Listo" class="ms-5 rounded noResponsive">
+                            <div class="col-12 col-md-12 col-lg-3 text-center noResponsive d-flex align-items-center justify-content-center">
+                                <img src="./assets/qr-menu.png" alt="Menu Listo" class="rounded noResponsive">
                             </div>
                     </div>
 
@@ -137,8 +137,8 @@
                         <h3 class="mt-3">Virtual Menú - Todos los derechos reservados</h3>
                     </div>
                     <div class="d-flex justify-content-center pb-3">
-                    <a href="https://instagram.com/"><img src="./assets/Instagram_icon-icons.com_66804.png" target="_blank" alt="Enlace Instagram"></a>
-                </div>
+                       <a href="https://instagram.com/"><img src="./assets/Instagram_icon-icons.com_66804.png" target="_blank" alt="Enlace Instagram"></a>
+                    </div>
             </div>
     </main>
     <footer class="fondoNegro">
@@ -146,7 +146,6 @@
             <h6 class="mn">® Proyecto académico | CODERHOUSE 2022 </h6>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
