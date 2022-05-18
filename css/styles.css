@@ -159,6 +159,17 @@ footer h6{
         width: 30%;
     }
 
+    form{
+        width: 100%;
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    form textarea{
+        width: 100%;
+    }
 }
    
 
@@ -216,6 +227,19 @@ footer h6{
     .about .row{
         text-align: center;
     }
+
+    form{
+        width: 100%;
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    form textarea{
+        width: 100%;
+    }
+
 
  }
 
@@ -281,6 +305,20 @@ footer h6{
         width: 40%;
     }
 
+
+    form{
+        width: 100%;
+    }
+
+    form input{
+        width: 100%;
+    }
+
+    form textarea{
+        width: 100%;
+    }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -317,6 +355,19 @@ footer h6{
 
     .imgContacto{
         width: 40%;
+    }
+
+
+    form{
+        width: 80%;
+    }
+
+    form input{
+        width: 80%;
+    }
+
+    form textarea{
+        width: 80%;
     }
 
  }
