@@ -338,10 +338,15 @@ footer h6{
     .col4Landscape{
         width: 25%!important;
     }
+
+
 }
+
+
+
 @media screen and (min-device-width: 768px) and (max-device-width: 1824px) and (orientation : landscape){
     .imagenPortada{
-        width: 100%;
+        width: 50%;
         margin-top: 0;
         padding: 0;
         position: relative;
@@ -364,7 +369,7 @@ footer h6{
 @media screen and (min-device-width: 992px) and (max-device-width: 1824px) and (orientation : landscape){
     
    .landscapeMarginTop20{
-       margin-top: 150px;
+       margin-top: 100px;
    }
 
 }
