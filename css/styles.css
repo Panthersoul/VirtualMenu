@@ -104,6 +104,8 @@ footer h6{
 
 /*************************/
 
+
+
 @media (max-width: 576px) { 
     article img{
         width: 70%;
@@ -120,7 +122,7 @@ footer h6{
 
     .imagenPortada{
         margin-bottom: 50px;
-        width: 75%;
+        width: 45%;
         position: relative!important;
         top: 10px;
     }
@@ -171,7 +173,7 @@ footer h6{
         width: 100%;
     }
 }
-   
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
@@ -242,6 +244,17 @@ footer h6{
 
 
  }
+
+   
+ @media (max-width: 768px) and (max-height: 480px){
+    .imagenPortada {
+        margin-bottom: 50px;
+        width: 20%;
+        position: relative!important;
+        top: 10px;
+        }
+    }
+
 
 /* Tablets en horizonal y escritorios normales */
 @media (min-width: 768px) {
@@ -321,6 +334,11 @@ footer h6{
 
 }
 
+@media screen and (max-device-width: 768px) and (orientation : landscape){
+    .col4Landscape{
+        width: 25%!important;
+    }
+}
 @media screen and (min-device-width: 768px) and (max-device-width: 1824px) and (orientation : landscape){
     .imagenPortada{
         width: 100%;
@@ -334,10 +352,24 @@ footer h6{
         background-color: rgb(238, 228, 96);
    }
 
+
+   .col4Landscape{
+       width: 25%;
+   }
    .landscapeMarginTop20{
        margin-top: 50px;
    }
 }
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1824px) and (orientation : landscape){
+    
+   .landscapeMarginTop20{
+       margin-top: 150px;
+   }
+
+}
+
+
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
