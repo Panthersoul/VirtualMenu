@@ -321,6 +321,24 @@ footer h6{
 
 }
 
+@media screen and (min-device-width: 768px) and (max-device-width: 1824px) and (orientation : landscape){
+    .imagenPortada{
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+        position: relative;
+        top: 50px;
+    }    
+    .portada .fondoAmarillo{
+        height: 100vh;
+        background-color: rgb(238, 228, 96);
+   }
+
+   .landscapeMarginTop20{
+       margin-top: 50px;
+   }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .noResponsive{
