@@ -127,6 +127,11 @@ footer h6{
         top: 10px;
     }
 
+    .fondoAmarillo :nth-child(1) {
+        
+        text-align: center;
+    }
+
     .margenTop30{
         margin-top: 30px;
     }
@@ -184,10 +189,13 @@ footer h6{
     }
 
     
+
     .portada .fondoAmarillo{
         height: 100vh;
         background-color: rgb(238, 228, 96);
     }
+
+  
 
     .imagenPortada{
         width: 55%;
