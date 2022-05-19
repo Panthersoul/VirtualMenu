@@ -127,8 +127,7 @@ footer h6{
         top: 10px;
     }
 
-    .fondoAmarillo :nth-child(1) {
-        
+    .fondoAmarillo:nth-child(1) {
         text-align: center;
     }
 
