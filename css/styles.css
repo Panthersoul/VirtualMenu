@@ -41,7 +41,11 @@ navbar INDEX
     text-align: center;
 }
 
-
+/* Agrego una magia para que el menú no pise el subtitulo de la página */
+.perspectiva{
+    padding-top: 50px;
+    margin-top: -50px;
+}
 
 /*PORTADA*/
 .portada{
