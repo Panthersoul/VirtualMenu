@@ -648,7 +648,7 @@ footer h6{
     }
     
     textarea:focus{
-        transform: scale(1.2);
+        transform: scale(1.1);
         border-color: #3a86ff;
     }
     
