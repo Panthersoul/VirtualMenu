@@ -1,3 +1,5 @@
+$amarillo: rgb(238, 228, 96);
+
 @media (max-width: 576px) { 
    
     .noResponsive{
@@ -13,7 +15,7 @@
     .portada{
         .fondoAmarillo{
             height: 100vh;
-            background-color: rgb(238, 228, 96);
+            background-color: $amarillo;
         }
 
         .imagenPortada{
@@ -91,7 +93,7 @@
     .portada{
         .fondoAmarillo{
             height: 100vh;
-            background-color: rgb(238, 228, 96);
+            background-color:  $amarillo;
         }
 
         .imagenPortada{
@@ -195,7 +197,7 @@
 
         .fondoAmarillo{
             height: 70vh;
-            background-color: rgb(238, 228, 96);
+            background-color:  $amarillo;
         }
     }
 
@@ -263,7 +265,7 @@
     }    
     .portada .fondoAmarillo{
         height: 100vh;
-        background-color: rgb(238, 228, 96);
+        background-color:  $amarillo;
    }
 
 
@@ -299,7 +301,7 @@
 
         .fondoAmarillo{
             height: 70vh;
-            background-color: rgb(238, 228, 96);
+            background-color:  $amarillo;
         }
     
         .imagenPortada{
@@ -347,7 +349,7 @@
     .portada{
         .fondoAmarillo{
             height: 75vh;
-            background-color: rgb(238, 228, 96);
+            background-color:  $amarillo;
         }
     
         .imagenPortada{
@@ -378,7 +380,7 @@
     .portada {
         .fondoAmarillo{
             height: 80vh;
-            background-color: rgb(238, 228, 96);
+            background-color:  $amarillo;
         }
     
         .imagenPortada{

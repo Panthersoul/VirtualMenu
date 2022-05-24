@@ -10,8 +10,10 @@ body {
     scroll-behavior: smooth !important;
 }
 
+$amarillo: rgb(238, 228, 96);
+
 .navbar{
-    background-color: rgb(238, 228, 96) !important;
+    background-color: $amarillo !important;
 
     .navbar-nav{
         text-align: center;
@@ -31,7 +33,7 @@ body {
     display: block;
 
     .fondoAmarillo{
-        background-color: rgb(238, 228, 96);
+        background-color: $amarillo;
     }
 
     .imagenPortada{
