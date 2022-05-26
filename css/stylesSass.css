@@ -258,6 +258,10 @@ textarea {
     position: relative !important;
     top: 10px; } }
 
+@media (max-width: 992px) {
+  .navbar {
+    box-shadow: 1px 5px 20px #888888; } }
+
 /* Tablets en horizonal y escritorios normales */
 @media (min-width: 768px) {
   /* Clase para ocultar cuando estoy responsivo*/
@@ -326,6 +330,8 @@ textarea {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .navbar {
+    box-shadow: none !important; }
   .noResponsive {
     display: unset; }
   .soloResponsive {
