@@ -7,6 +7,7 @@ body {
 * {
   scroll-behavior: smooth !important; }
 
+/* map */
 .navbar {
   background-color: #eee460 !important; }
   .navbar .navbar-nav {
@@ -32,7 +33,7 @@ body {
     animation-fill-mode: forwards; }
 
 #comoHacemos {
-  color: white;
+  color: white !important;
   /*Con el linear gradient oscurezco la imagen de fondo*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/pexels-anna-guerrero-1765005.jpg");
   background-repeat: no-repeat;
@@ -42,7 +43,8 @@ article {
   text-align: justify !important; }
 
 .fondoNegro {
-  background-color: #333131; }
+  /* background-color: rgb(51, 49, 49); */
+  background-color: #333131 !important; }
 
 .colorBlanco {
   color: white; }
@@ -57,6 +59,17 @@ footer h6 {
   margin: none;
   padding: 5px; }
 
+/* Declaro un map para utilizar para caso de uso por el desafío. */
+.row--medida {
+  width: 100% !important; }
+
+.row--medida {
+  width: 70% !important; }
+
+.row--medida {
+  width: 40% !important; }
+
+/*Utilizo el map en el about.html*/
 /* Botones  */
 /*Contenedor de botones en el index*/
 .containButton {
@@ -172,18 +185,20 @@ textarea {
     border-color: #3a86ff; }
 
 @media (max-width: 576px) {
+  /*Esta clase se utiliza para el caso de uso que se pide en el desafio*/
+  .imagenPort, .portada .imagenPortada {
+    position: relative !important;
+    top: 10px; }
   .noResponsive {
     display: none; }
   article img {
     width: 70%; }
   .portada .fondoAmarillo {
     height: 100vh;
-    background-color: #eee460; }
+    background-color: #eee460 !important; }
   .portada .imagenPortada {
     margin-bottom: 50px;
-    width: 45%;
-    position: relative !important;
-    top: 10px; }
+    width: 45%; }
   .portada .fondoAmarillo:nth-child(1) {
     text-align: center; }
   .margenTop30 {
@@ -192,13 +207,7 @@ textarea {
   .about p {
     text-align: justify;
     margin: none !important; }
-  .about h3 {
-    text-align: center; }
-  .about img {
-    text-align: center; }
-  .about div {
-    text-align: center; }
-  .about .row {
+  .about h3, .about img, .about div, .about .row {
     text-align: center; }
   .tamañoVideo {
     width: 360px;
@@ -207,9 +216,7 @@ textarea {
     width: 30%; }
   form {
     width: 100%; }
-    form input {
-      width: 100%; }
-    form textarea {
+    form input, form textarea {
       width: 100%; } }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -218,7 +225,7 @@ textarea {
     display: none; }
   .portada .fondoAmarillo {
     height: 100vh;
-    background-color: #eee460; }
+    background-color: #eee460 !important; }
   .portada .imagenPortada {
     width: 55%;
     margin-bottom: 45px;
@@ -236,19 +243,11 @@ textarea {
   .about p {
     text-align: justify;
     margin: none !important; }
-  .about h3 {
-    text-align: center; }
-  .about img {
-    text-align: center; }
-  .about div {
-    text-align: center; }
-  .about .row {
+  .about h3, .about img, .about div, .about .dow {
     text-align: center; }
   form {
     width: 100%; }
-    form input {
-      width: 100%; }
-    form textarea {
+    form input, form textarea {
       width: 100%; } }
 
 @media (max-width: 768px) and (max-height: 480px) {
@@ -280,19 +279,13 @@ textarea {
     /* Este cambio lo agrego por último porque la imagen queda demasiado grande*/ }
   .portada .fondoAmarillo {
     height: 70vh;
-    background-color: #eee460; }
+    background-color: #eee460 !important; }
   /*ABOUT*/
   .about p {
     text-align: unset;
     margin: none; }
-  .about h3 {
-    text-align: unset; }
-  .about img {
+  .about h3, .about img, .about div, .about .dow {
     text-align: center; }
-  .about div {
-    text-align: unset; }
-  .about .row {
-    text-align: unset; }
   .tamañoVideo {
     width: 560px;
     height: 315px; }
@@ -300,9 +293,7 @@ textarea {
     width: 40%; }
   form {
     width: 100%; }
-    form input {
-      width: 100%; }
-    form textarea {
+    form input, form textarea {
       width: 100%; } }
 
 @media screen and (max-device-width: 768px) and (orientation: landscape) {
@@ -318,7 +309,7 @@ textarea {
     top: 50px; }
   .portada .fondoAmarillo {
     height: 100vh;
-    background-color: #eee460; }
+    background-color: #eee460 !important; }
   .col4Landscape {
     width: 25%; }
   .landscapeMarginTop20 {
@@ -338,7 +329,7 @@ textarea {
     display: none; }
   .portada .fondoAmarillo {
     height: 70vh;
-    background-color: #eee460; }
+    background-color: #eee460 !important; }
   .portada .imagenPortada {
     position: relative !important;
     top: 80px; }
@@ -352,16 +343,14 @@ textarea {
     width: 40%; }
   form {
     width: 80%; }
-    form input {
-      width: 80%; }
-    form textarea {
+    form input, form textarea {
       width: 80%; } }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .portada .fondoAmarillo {
     height: 75vh;
-    background-color: #eee460; }
+    background-color: #eee460 !important; }
   .portada .imagenPortada {
     position: relative !important;
     top: 40px; }
@@ -376,7 +365,7 @@ textarea {
 @media (min-width: 1400px) {
   .portada .fondoAmarillo {
     height: 80vh;
-    background-color: #eee460; }
+    background-color: #eee460 !important; }
   .portada .imagenPortada {
     position: relative !important;
     top: 40px; }

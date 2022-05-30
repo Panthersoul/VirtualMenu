@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
 
+
+
 body {
   font-family: poppins, sans-serif;  
   margin: 0px;
@@ -10,10 +12,18 @@ body {
     scroll-behavior: smooth !important;
 }
 
-$amarillo: rgb(238, 228, 96);
+
+/* map */ 
+$colores: (
+      "amarillo": rgb(238, 228, 96),
+      "blanco": white,
+      "negro": rgb(51, 49, 49),
+);
+
+
 
 .navbar{
-    background-color: $amarillo !important;    
+    background-color: map-get($colores, amarillo) !important;    
 
     .navbar-nav{
         text-align: center;
@@ -33,7 +43,7 @@ $amarillo: rgb(238, 228, 96);
     display: block;
 
     .fondoAmarillo{
-        background-color: $amarillo;
+        background-color: map-get($colores, amarillo);
     }
 
     .imagenPortada{
@@ -49,7 +59,8 @@ $amarillo: rgb(238, 228, 96);
 }
 
 #comoHacemos{
-    color: white;
+    color: map-get($colores, blanco) !important;    
+    
     /*Con el linear gradient oscurezco la imagen de fondo*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url("../assets/pexels-anna-guerrero-1765005.jpg");
     background-repeat: no-repeat;
@@ -62,7 +73,8 @@ article{
 }
 
 .fondoNegro{
-    background-color: rgb(51, 49, 49);
+    /* background-color: rgb(51, 49, 49); */
+    background-color: map-get($colores, negro) !important;    
 }
 
 .colorBlanco{
@@ -84,3 +96,17 @@ footer h6{
 }
 
 
+/* Declaro un map para utilizar para caso de uso por el desafío. */
+$ancho: (
+    full: 100%,
+    medium: 70%,
+    small: 40%
+);
+
+@each $medida, $valor in $ancho{
+    .row--#{medida}{
+        width: $valor !important;
+    }
+}
+
+/*Utilizo el map en el about.html*/

@@ -1,6 +1,23 @@
-$amarillo: rgb(238, 228, 96);
+
+@mixin textoCentrado {
+    text-align: center;
+}
+
+@mixin anchoFull{
+    width: 100%;
+}
+
+
+
 
 @media (max-width: 576px) { 
+
+    /*Esta clase se utiliza para el caso de uso que se pide en el desafio*/
+    .imagenPort{
+        position: relative!important;
+        top: 10px;
+    }
+
     .noResponsive{
         display: none;
     }
@@ -14,14 +31,13 @@ $amarillo: rgb(238, 228, 96);
     .portada{
         .fondoAmarillo{
             height: 100vh;
-            background-color: $amarillo;
+            background-color: map-get($colores, amarillo) !important;    
         }
 
         .imagenPortada{
+            @extend .imagenPort; 
             margin-bottom: 50px;
             width: 45%;
-            position: relative!important;
-            top: 10px;
         }
 
         .fondoAmarillo:nth-child(1) {
@@ -39,17 +55,8 @@ $amarillo: rgb(238, 228, 96);
             text-align: justify;
             margin: none !important;
         }
-        h3{
-            text-align: center;
-        }
-        img{
-            text-align: center;
-        }
-        div {
-            text-align: center;
-        }
-        .row{
-            text-align: center;
+        h3, img, div, .row{
+            @include textoCentrado;
         }
     
     }
@@ -64,14 +71,11 @@ $amarillo: rgb(238, 228, 96);
     }
 
     form{
-        width: 100%;
+        @include anchoFull;
+        
 
-        input{
-            width: 100%;
-        }
-
-        textarea{
-            width: 100%;
+        input, textarea{
+            @include anchoFull;
         }
 
     }
@@ -87,12 +91,10 @@ $amarillo: rgb(238, 228, 96);
         display: none;
     }
 
-  
-
     .portada{
         .fondoAmarillo{
             height: 100vh;
-            background-color:  $amarillo;
+            background-color:  map-get($colores, amarillo) !important;    
         }
 
         .imagenPortada{
@@ -126,32 +128,19 @@ $amarillo: rgb(238, 228, 96);
             text-align: justify;
             margin: none !important;
         }
-        h3{
-            text-align: center;
-        }
-        img{
-            text-align: center;
-        }
-        div {
-            text-align: center;
-        }
-        .row{
-            text-align: center;
+        h3, img, div, .dow{
+            @include textoCentrado;
         }
     
     }
     
     form{
-        width: 100%;
+        @include anchoFull;
 
-        
-        input{
-        width: 100%;
+        input, textarea{
+            @include anchoFull;
         }
 
-        textarea{
-        width: 100%;
-        }
     }
  }
 
@@ -191,7 +180,7 @@ $amarillo: rgb(238, 228, 96);
     .portada {
     
         .fondoAmarillo img{
-            width: 100%;
+            @include anchoFull;
         }
         
         .imagenPortada{
@@ -202,7 +191,7 @@ $amarillo: rgb(238, 228, 96);
 
         .fondoAmarillo{
             height: 70vh;
-            background-color:  $amarillo;
+            background-color: map-get($colores, amarillo) !important;    
         }
     }
 
@@ -212,17 +201,10 @@ $amarillo: rgb(238, 228, 96);
             text-align: unset;
             margin: none;
         }
-        h3{
-            text-align: unset;
-        }
-        img{
-            text-align: center;
-        }
-        div {
-            text-align: unset;
-        }
-        .row{
-            text-align: unset;
+
+
+        h3, img, div, .dow{
+            @include textoCentrado;
         }
     }
 
@@ -238,16 +220,16 @@ $amarillo: rgb(238, 228, 96);
         width: 40%;
     }
 
-    form{
-        width: 100%;
 
-        input{
-            width: 100%;    
+    form{
+        @include anchoFull;
+
+        input, textarea{
+            @include anchoFull;
         }
-        textarea{
-            width: 100%;
-        }
+
     }
+    
 }
 
 @media screen and (max-device-width: 768px) and (orientation : landscape){
@@ -270,7 +252,7 @@ $amarillo: rgb(238, 228, 96);
     }    
     .portada .fondoAmarillo{
         height: 100vh;
-        background-color:  $amarillo;
+        background-color: map-get($colores, amarillo) !important;    
    }
 
 
@@ -311,7 +293,7 @@ $amarillo: rgb(238, 228, 96);
 
         .fondoAmarillo{
             height: 70vh;
-            background-color:  $amarillo;
+            background-color: map-get($colores, amarillo) !important;    
         }
     
         .imagenPortada{
@@ -320,7 +302,7 @@ $amarillo: rgb(238, 228, 96);
         }
         
         .fondoAmarillo img{
-            width: 100%;
+            @include anchoFull;
         }
     }
     
@@ -343,11 +325,7 @@ $amarillo: rgb(238, 228, 96);
     form{
         width: 80%;
 
-        input{
-            width: 80%;
-        }
-    
-        textarea{
+        input, textarea {
             width: 80%;
         }
     }
@@ -359,7 +337,7 @@ $amarillo: rgb(238, 228, 96);
     .portada{
         .fondoAmarillo{
             height: 75vh;
-            background-color:  $amarillo;
+            background-color: map-get($colores, amarillo) !important;    
         }
     
         .imagenPortada{
@@ -376,8 +354,6 @@ $amarillo: rgb(238, 228, 96);
         width: unset;
     }
 
-    
-
     .imgContacto{
         width: 60%;
     }
@@ -390,7 +366,7 @@ $amarillo: rgb(238, 228, 96);
     .portada {
         .fondoAmarillo{
             height: 80vh;
-            background-color:  $amarillo;
+            background-color: map-get($colores, amarillo) !important;    
         }
     
         .imagenPortada{
