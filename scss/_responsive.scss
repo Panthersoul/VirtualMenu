@@ -1,0 +1,384 @@
+
+@mixin textoCentrado {
+    text-align: center;
+}
+
+@mixin anchoFull{
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 576px) { 
+
+    /*Esta clase se utiliza para el caso de uso que se pide en el desafio*/
+    .imagenPort{
+        position: relative!important;
+        top: 10px;
+    }
+
+    .noResponsive{
+        display: none;
+    }
+
+    article{
+        img{
+            width: 70%;
+        }
+    }
+   
+    .portada{
+        .fondoAmarillo{
+            height: 100vh;
+            background-color: map-get($colores, amarillo) !important;    
+        }
+
+        .imagenPortada{
+            @extend .imagenPort; 
+            margin-bottom: 50px;
+            width: 45%;
+        }
+
+        .fondoAmarillo:nth-child(1) {
+            text-align: center;
+        }
+    }
+
+    .margenTop30{
+        margin-top: 30px;
+    }
+
+    /*ABOUT*/
+    .about{
+        p{
+            text-align: justify;
+            margin: none !important;
+        }
+        h3, img, div, .row{
+            @include textoCentrado;
+        }
+    
+    }
+    
+    .tamañoVideo{
+        width: 360px;
+        height: 215px;
+    }
+
+    .imgContacto{
+        width: 30%;
+    }
+
+    form{
+        @include anchoFull;
+        
+
+        input, textarea{
+            @include anchoFull;
+        }
+
+    }
+
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+
+    .noResponsive{
+        display: none;
+    }
+
+    .portada{
+        .fondoAmarillo{
+            height: 100vh;
+            background-color:  map-get($colores, amarillo) !important;    
+        }
+
+        .imagenPortada{
+            width: 55%;
+            margin-bottom: 45px;
+            position: relative!important;
+            top: 40px;
+        }
+    } 
+
+    .margenTop30{
+        margin-top: 30px;
+    }
+
+    article img{
+        width: 70%;
+    }
+
+    .imgResponsive{
+        width: 50%;
+    }
+
+    .imgContacto{
+        width: 40%;
+    }
+    /*ABOUT*/    
+
+    .about {
+
+        p{
+            text-align: justify;
+            margin: none !important;
+        }
+        h3, img, div, .dow{
+            @include textoCentrado;
+        }
+    
+    }
+    
+    form{
+        @include anchoFull;
+
+        input, textarea{
+            @include anchoFull;
+        }
+
+    }
+ }
+
+   
+ @media (max-width: 768px) and (max-height: 480px){
+    .imagenPortada {
+        margin-bottom: 50px;
+        width: 20%;
+        position: relative!important;
+        top: 10px;
+        }
+    }
+
+@media (max-width: 992px) { 
+        .navbar{
+            box-shadow: 1px 5px 20px #888888;
+        }
+    }
+
+
+/* Tablets en horizonal y escritorios normales */
+@media (min-width: 768px) {
+    /* Clase para ocultar cuando estoy responsivo*/
+    .noResponsive{
+         display: none;
+     }
+
+     .imgResponsive{
+        width: unset;
+    }
+    
+
+    article img{
+        width: 70%;
+    }
+
+    .portada {
+    
+        .fondoAmarillo img{
+            @include anchoFull;
+        }
+        
+        .imagenPortada{
+            width: 100%;
+            position: relative!important;
+            top: 20px;  /* Este cambio lo agrego por último porque la imagen queda demasiado grande*/
+        }
+
+        .fondoAmarillo{
+            height: 70vh;
+            background-color: map-get($colores, amarillo) !important;    
+        }
+    }
+
+    /*ABOUT*/    
+    .about {
+        p{
+            text-align: unset;
+            margin: none;
+        }
+
+
+        h3, img, div, .dow{
+            @include textoCentrado;
+        }
+    }
+
+
+
+    
+    .tamañoVideo{
+        width: 560px;
+        height: 315px;
+    }
+
+    .imgContacto{
+        width: 40%;
+    }
+
+
+    form{
+        @include anchoFull;
+
+        input, textarea{
+            @include anchoFull;
+        }
+
+    }
+    
+}
+
+@media screen and (max-device-width: 768px) and (orientation : landscape){
+    .col4Landscape{
+        width: 25%!important;
+    }
+
+
+}
+
+
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1824px) and (orientation : landscape){
+    .imagenPortada{
+        width: 50%;
+        margin-top: 0;
+        padding: 0;
+        position: relative;
+        top: 50px;
+    }    
+    .portada .fondoAmarillo{
+        height: 100vh;
+        background-color: map-get($colores, amarillo) !important;    
+   }
+
+
+   .col4Landscape{
+       width: 25%;
+   }
+   .landscapeMarginTop20{
+       margin-top: 50px;
+   }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1824px) and (orientation : landscape){
+    
+   .landscapeMarginTop20{
+       margin-top: 100px;
+   }
+
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    .navbar{
+    box-shadow: none !important;
+    }
+
+    .noResponsive{
+        display: unset;
+    }
+
+    .soloResponsive{
+        display: none;
+    }
+
+    .portada {
+
+        .fondoAmarillo{
+            height: 70vh;
+            background-color: map-get($colores, amarillo) !important;    
+        }
+    
+        .imagenPortada{
+            position: relative!important;
+            top: 80px;
+        }
+        
+        .fondoAmarillo img{
+            @include anchoFull;
+        }
+    }
+    
+    
+
+    
+    .img60{
+        width: 60%;
+    }
+
+    article img{
+        width: 70%;
+    }
+
+    .imgContacto{
+        width: 40%;
+    }
+
+
+    form{
+        width: 80%;
+
+        input, textarea {
+            width: 80%;
+        }
+    }
+
+ }
+ 
+ /* X-Large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+    .portada{
+        .fondoAmarillo{
+            height: 75vh;
+            background-color: map-get($colores, amarillo) !important;    
+        }
+    
+        .imagenPortada{
+            position: relative!important;
+            top: 40px;
+        }
+
+        .fondoAmarillo img{
+            width: 95%;
+        }
+    } 
+
+    .img60{
+        width: unset;
+    }
+
+    .imgContacto{
+        width: 60%;
+    }
+    
+
+  }
+ 
+ /*// XX-Large devices (larger desktops, 1400px and up) */
+ @media (min-width: 1400px) { 
+    .portada {
+        .fondoAmarillo{
+            height: 80vh;
+            background-color: map-get($colores, amarillo) !important;    
+        }
+    
+        .imagenPortada{
+            position: relative!important;
+            top: 40px;
+            
+        }
+    }
+    
+    .imgContacto{
+        width: 30%;
+    }
+
+  }
+
