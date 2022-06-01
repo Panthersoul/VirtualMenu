@@ -35,7 +35,7 @@ body {
 #comoHacemos {
   color: white !important;
   /*Con el linear gradient oscurezco la imagen de fondo*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/pexels-anna-guerrero-1765005.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/pexels-anna-guerrero-1765005.webp");
   background-repeat: no-repeat;
   background-size: cover; }
 
