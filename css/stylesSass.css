@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap");
-.flexSeparado {
-  display: flex;
-  justify-content: space-between; }
-
 body {
   font-family: poppins, sans-serif;
   margin: 0px; }
