@@ -58,7 +58,7 @@ $colores: (
     
 }
 
-#comoHacemos{
+.comoHacemos{
     color: map-get($colores, blanco) !important;    
     
     /*Con el linear gradient oscurezco la imagen de fondo*/

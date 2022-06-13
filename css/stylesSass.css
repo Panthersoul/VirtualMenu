@@ -32,7 +32,7 @@ body {
     animation-timing-function: linear;
     animation-fill-mode: forwards; }
 
-#comoHacemos {
+.comoHacemos {
   color: white !important;
   /*Con el linear gradient oscurezco la imagen de fondo*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/pexels-anna-guerrero-1765005.webp");
@@ -102,7 +102,8 @@ footer h6 {
 .giroImagen {
   transition: transform .7s ease-in-out; }
   .giroImagen:hover {
-    transform: rotate(360deg); }
+    transform: translate(50px, 0);
+    transition: transform 2s ease-in-out; }
 
 .escaloElemento {
   overflow: hidden; }
@@ -120,7 +121,8 @@ footer h6 {
   overflow: hidden; }
   .disminuyoElemento:hover {
     -webkit-transform: scale(1.3);
-    transform: scale(0.8); }
+    transform: scale(0.8);
+    transition-duration: 2s; }
 
 .deslizarContenido {
   animation-duration: 1.5s;
@@ -183,6 +185,27 @@ textarea {
   textarea:focus {
     transform: scale(1.1);
     border-color: #3a86ff; }
+
+/* Doy movimiento a la flecha*/
+@keyframes movVertical {
+  0% {
+    left: 0%; }
+  25% {
+    left: -10%; }
+  50% {
+    left: 0%; }
+  75% {
+    left: 10%; }
+  100% {
+    left: 0%; } }
+
+.flecha {
+  position: relative;
+  animation-name: movVertical;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite; }
 
 @media (max-width: 576px) {
   /*Esta clase se utiliza para el caso de uso que se pide en el desafio*/

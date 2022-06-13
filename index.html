@@ -1,161 +1,289 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Virtual Menú</title>
 
     <!-- SEO -->
-    <meta name="description" content="Un sitio pensado en potenciar la comunicación con el cliente sin costos extras y potente">
-    <meta name="keywords" content="MENU, VIRTUAL, RESTAURANT, COMIDA, RAPIDA, PAPEL, ACCESO">
-    <meta name="robots" content="all">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./assets/imageHeader.svg">
-    <meta property="og:image:alt" content="Menú virtual para su negocio">
+    <meta
+      name="description"
+      content="Un sitio pensado en potenciar la comunicación con el cliente sin costos extras y potente"
+    />
+    <meta
+      name="keywords"
+      content="MENU, VIRTUAL, RESTAURANT, COMIDA, RAPIDA, PAPEL, ACCESO"
+    />
+    <meta name="robots" content="all" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/imageHeader.svg" />
+    <meta property="og:image:alt" content="Menú virtual para su negocio" />
 
     <!-- CSS y Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/stylesSass.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/stylesSass.css" />
   </head>
   <body>
-        <header>
-            
-            <nav class="navbar navbar-expand-lg bg-light fixed-top">
-                <div class="container-fluid">
-                <a href="index.html"><img src="./assets/logoPortada.png" alt="Menu virtual" class="px-3"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./pages/about.html">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  aria-current="page" href="./pages/service.html">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./pages/compromise.html">Compromiso</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./pages/contact.html">Contacto</a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
-        </header>
-    <main class="content mt-5">
-        <!-- Portada -->
-        <div class="portada">
-           <div class="fondoAmarillo">
-                <div class="container">
-                    <div class="row justify-content-evenly align-items-center">
-                        <div class="col-sx-6 col-12 col-md-6 col-lg-6 mt-5">
-                            <img class="imagenPortada" src="./assets/imageHeader.svg" alt="Imagen de Portada">
-                        </div>
-                        <div class="col-sx-6 col-12 col-md-6 col-lg-6 ">
-                            <h1  class="deslizarContenido margenTop30">Virtual Menú</h1>
-                            <p class="deslizarContenido">Digitalizamos el menú de su negocio <br> y creamos un Código QR que permite a sus clientes <br> leer la carta en sus dispositivos personales.</p>
-                            <div class="containButton deslizarContenido">
-                                <a href="#obtenerPerspectiva"><button aria-label="Descubrir" class="botonAzul">Descubrir</button></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-           </div>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+          <a href="index.html"
+            ><img
+              src="./assets/logoPortada.png"
+              alt="Menu virtual"
+              class="px-3"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/about.html"
+                  >Quienes somos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/service.html"
+                  >Servicios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/compromise.html"
+                  >Compromiso</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./pages/contact.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- Primera sección  -->
-            <div id="obtenerPerspectiva" class="perspectiva container mb-5">
-                <div class="row mt-5">
-                    <div class="col-12 text-center px-5">
-                        <h2>Obtén una perspectiva mas clara</h2>
-                    </div>
+      </nav>
+    </header>
+    <main class="content mt-5">
+      <!-- Portada -->
+      <div class="portada">
+        <div class="fondoAmarillo">
+          <div class="container">
+            <div class="row justify-content-evenly align-items-center">
+              <div class="col-sx-6 col-12 col-md-6 col-lg-6 mt-5">
+                <img
+                  class="imagenPortada"
+                  src="./assets/imageHeader.svg"
+                  alt="Imagen de Portada"
+                />
+              </div>
+              <div class="col-sx-6 col-12 col-md-6 col-lg-6">
+                <h1 class="deslizarContenido margenTop30">Virtual Menú</h1>
+                <p class="deslizarContenido">
+                  Digitalizamos el menú de su negocio <br />
+                  y creamos un Código QR que permite a sus clientes <br />
+                  leer la carta en sus dispositivos personales.
+                </p>
+                <div class="containButton deslizarContenido">
+                  <a href="#obtenerPerspectiva"
+                    ><button aria-label="Descubrir" class="botonAzul">
+                      Descubrir
+                    </button></a
+                  >
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-md-6 col-lg-4 p-3">
-                        <article >
-                            <div class="text-center">
-                                <img src="./assets/restaurant.webp" alt="Restaurant" class="rounded-4 mb-3">
-                                <h3 >Restaurant</h3>
-                            </div>
-                            <p class="">Si no la tiene, realice el diseño de su Menú haciéndolo adaptable para todos los dispositivos móviles.</p>
-                            <p class="noResponsive">   En cada mesa por medio de un porta código, ofrezca visualizar el menú sin tener contacto con la carta simplemente escaneando un código QR.
-                                Esto ahorraría a sus camareros tiempo y lo más importante, las cartas dejarán de ser vectores de contagio de enfermedades y del mismo modo no será necesario imprimirlas a papel periódicamente a raíz de su deterioro.</p>            
-                        </article>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 p-3">
-                        <article>
-                            <div class="text-center">
-                                <img src="./assets/hotel.webp" alt="Hotel" class="rounded-4 mb-3">
-                                <h3>Hotel</h3>
-                            </div>
-                            <p>Imagine contar en cada habitación un código QR con toda información relevante.</p>
-                                <p class="noResponsive"> Costos, horarios, teléfono, lugares de interés, shows, promociones, menús...
-                                Será de sencillo, accesible y evitará llamadas telefónicas a la recepción liberando recursos y además evitaría el pago periódico de impresiones a papel.</p>
-                        </article>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 p-3">
-                        <article>
-                            <div class="text-center">
-                                <img src="./assets/comercio.webp" alt="Comercio" class="rounded-4 mb-3">    
-                                <h3>Local Comercial</h3>
-                            </div>
-                            <p>Coloque en puntos estratégicos de su tienda/local códigos QR fácilmente accesibles para permitir la consulta a listas de precios</p>
-                            <p class="noResponsive"> ofrezca promociones o publique todo lo que le gustaría transmitir a su cliente.
-                                Este servicio es exclusivo de nuestra empresa y ha sido pensado para dar un nuevo enfoque al uso de la comunicación escrita fomentando la seguridad y accesibilidad.</p>
-                        </article>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!-- Termina primera seccion -->
-            <!-- COMO LO HACEMOS -->
-            <div id="comoHacemos">
-                <div class="container">
-                    <div class="row pt-5">
-                        <div class="col-12 text-center pb-5">
-                            <h2>
-                                ¿Cómo lo hacemos?
-                            </h2>
-                            <p>
-                                Proveemos un servicio para gestionar su Menú digital haciéndolo adaptable para todos los dispositivos móviles.
-                            </p>
-                            <p class="noResponsive"> 
-                                Coloque en las mesas, paredes o cualquier punto estratégico un porta código QR y ofrezca visualizar el menú, carta, instrucciones o cualquier información de interés sin tener contacto con un papel o mejor aún liberando al personal de su empresa de cumplir esta tarea.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center">
-                            <div class="col-12 col-md-4 col-lg-3 text-center imgResponsive d-flex align-items-center justify-content-center">
-                                <img src="./assets/qr-code.webp" alt="Escaneo" class=" rounded">
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-3  text-center  noResponsive d-flex align-items-center justify-content-center">
-                                <img src="./assets/arrow.webp" alt="Flecha" class=" rounded noResponsive giroImagen img60">
-                            </div>
-                            <div class="col-12 col-md-12 col-lg-3 text-center noResponsive d-flex align-items-center justify-content-center">
-                                <img src="./assets/qr-menu.webp" alt="Menu Listo" class="rounded noResponsive">
-                            </div>
-                    </div>
-               </div>
-                <a href="./pages/service.html" target="_blank" class="d-flex justify-content-center mt-5"><div class="containButton"><button aria-label="Servicios" class="botonAzul">Consulte nuestros servicios</button></div></a>    
-                <!-- Termina COMO LO HACEMOS-->
-
-                <!-- Agrego UN PSEUDOFOOTER dentro de esta sección para que tome el background image-->
-                <div class="text-center mt-5">
-                    <h3 class="mt-3">Virtual Menú - Todos los derechos reservados</h3>
-                </div>
-                <div class="d-flex justify-content-center pb-3">
-                    <a href="https://instagram.com/"><img src="./assets/Instagram_icon-icons.com_66804.png" target="_blank" alt="Enlace Instagram"></a>
-                </div>
+          </div>
+        </div>
+      </div>
+      <!-- Primera sección  -->
+      <div id="obtenerPerspectiva" class="perspectiva container mb-5">
+        <div class="row mt-5">
+          <div class="col-12 text-center px-5">
+            <h2>Obtén una perspectiva mas clara</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <article>
+              <div class="text-center">
+                <img
+                  src="./assets/restaurant.webp"
+                  alt="Restaurant"
+                  class="rounded-4 mb-3"
+                />
+                <h3>Restaurant</h3>
+              </div>
+              <p class="">
+                Si no la tiene, realice el diseño de su Menú haciéndolo
+                adaptable para todos los dispositivos móviles.
+              </p>
+              <p class="noResponsive">
+                En cada mesa por medio de un porta código, ofrezca visualizar el
+                menú sin tener contacto con la carta simplemente escaneando un
+                código QR. Esto ahorraría a sus camareros tiempo y lo más
+                importante, las cartas dejarán de ser vectores de contagio de
+                enfermedades y del mismo modo no será necesario imprimirlas a
+                papel periódicamente a raíz de su deterioro.
+              </p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <article>
+              <div class="text-center">
+                <img
+                  src="./assets/hotel.webp"
+                  alt="Hotel"
+                  class="rounded-4 mb-3"
+                />
+                <h3>Hotel</h3>
+              </div>
+              <p>
+                Imagine contar en cada habitación un código QR con toda
+                información relevante.
+              </p>
+              <p class="noResponsive">
+                Costos, horarios, teléfono, lugares de interés, shows,
+                promociones, menús... Será de sencillo, accesible y evitará
+                llamadas telefónicas a la recepción liberando recursos y además
+                evitaría el pago periódico de impresiones a papel.
+              </p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-3">
+            <article>
+              <div class="text-center">
+                <img
+                  src="./assets/comercio.webp"
+                  alt="Comercio"
+                  class="rounded-4 mb-3"
+                />
+                <h3>Local Comercial</h3>
+              </div>
+              <p>
+                Coloque en puntos estratégicos de su tienda/local códigos QR
+                fácilmente accesibles para permitir la consulta a listas de
+                precios
+              </p>
+              <p class="noResponsive">
+                ofrezca promociones o publique todo lo que le gustaría
+                transmitir a su cliente. Este servicio es exclusivo de nuestra
+                empresa y ha sido pensado para dar un nuevo enfoque al uso de la
+                comunicación escrita fomentando la seguridad y accesibilidad.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <!-- Termina primera seccion -->
+      <!-- COMO LO HACEMOS -->
+      <div class="comoHacemos">
+        <div class="container">
+          <div class="row pt-5">
+            <div class="col-12 text-center pb-5">
+              <h2>¿Cómo lo hacemos?</h2>
+              <p>
+                Proveemos un servicio para gestionar su Menú digital haciéndolo
+                adaptable para todos los dispositivos móviles.
+              </p>
+              <p class="noResponsive">
+                Coloque en las mesas, paredes o cualquier punto estratégico un
+                porta código QR y ofrezca visualizar el menú, carta,
+                instrucciones o cualquier información de interés sin tener
+                contacto con un papel o mejor aún liberando al personal de su
+                empresa de cumplir esta tarea.
+              </p>
             </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-md-4 col-lg-3 text-center imgResponsive d-flex align-items-center justify-content-center"
+            >
+              <img src="./assets/qr-code.webp" alt="Escaneo" class="rounded" />
+            </div>
+            <div
+              class="col-12 col-md-12 col-lg-3 text-center noResponsive d-flex align-items-center justify-content-center "
+            >
+              <img
+                src="./assets/arrow.webp"
+                alt="Flecha"
+                class="rounded noResponsive flecha img60"
+              />
+            </div>
+            <div
+              class="col-12 col-md-12 col-lg-3 text-center noResponsive d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/qr-menu.webp"
+                alt="Menu Listo"
+                class="rounded noResponsive"
+              />
+            </div>
+          </div>
+        </div>
+        <a
+          href="./pages/service.html"
+          target="_blank"
+          class="d-flex justify-content-center mt-5"
+          ><div class="containButton">
+            <button aria-label="Servicios" class="botonAzul">
+              Consulte nuestros servicios
+            </button>
+          </div></a
+        >
+        <!-- Termina COMO LO HACEMOS-->
+
+        <!-- Agrego UN PSEUDOFOOTER dentro de esta sección para que tome el background image-->
+        <div class="text-center mt-5">
+          <h3 class="mt-3">Virtual Menú - Todos los derechos reservados</h3>
+        </div>
+        <div class="d-flex justify-content-center pb-3">
+          <a href="https://instagram.com/"
+            ><img
+              src="./assets/Instagram_icon-icons.com_66804.png"
+              target="_blank"
+              alt="Enlace Instagram"
+          /></a>
+        </div>
+      </div>
     </main>
     <footer class="fondoNegro">
-        <div class="container text-center fondoNegro colorBlanco alto50">
-            <h6 class="mn">® Proyecto académico | CODERHOUSE 2022 </h6>
-        </div>
+      <div class="container text-center fondoNegro colorBlanco alto50">
+        <h6 class="mn">® Proyecto académico | CODERHOUSE 2022</h6>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
