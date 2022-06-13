@@ -301,7 +301,7 @@ textarea {
     top: 20px;
     /* Este cambio lo agrego por último porque la imagen queda demasiado grande*/ }
   .portada .fondoAmarillo {
-    height: 70vh;
+    height: 100vh;
     background-color: #eee460 !important; }
   /*ABOUT*/
   .about p {
