@@ -238,6 +238,9 @@
 @media (max-device-width:1002px) and (orientation: landscape){
     .landscape{
         width: 50% !important;
+        &.imagenPortada{
+            width: 50%;
+        }
     }
 }
 
