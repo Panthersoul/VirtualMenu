@@ -229,9 +229,15 @@
     
 }
 
-@media screen and (max-device-width: 768px) and (orientation : landscape){
+@media (max-device-width: 768px) and (orientation : landscape){
     .col4Landscape{
         width: 25%!important;
+    }
+    .landscape{
+        width: 50% !important;
+        &.imagenPortada{
+            width: 50%;
+        }
     }
 }
 
