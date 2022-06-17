@@ -107,7 +107,7 @@
                     <a href="tel:+111111111"
                       ><img src="../assets/wzp.png" alt="Wzp"
                     /></a>
-                    <a href="mailto:hol@hotmail.com"
+                    <a href="mailto:contacto@panthersoul.uy"
                       ><img src="../assets/mail.png" alt="Mail"
                     /></a>
                   </div>
@@ -120,7 +120,7 @@
           <div class="col-12 col-md-6 col-lg-6 mt-5">
             <section>
               <article class="d-flex justify-content-start px-5">
-                <form action="#">
+                <form id="contactform" action="//formspree.io/agiacosa@hotmail.com" method="POST">
                   <div class="">
                     <input
                       id="name"
@@ -144,11 +144,15 @@
                     <input
                       id="email"
                       type="email"
-                      name="email"
+                      name="_replyto"
                       required=""
                       placeholder="Email"
                       class="rounded px-3 mb-2"
                     />
+                  </div>
+                  <div class="">
+                    <input type="hidden" name="_subject" value="Website contact" />
+                    <input type="hidden" name="_next" value="//mywebsite.com/thanks.html" />
                   </div>
                   <div class="">
                     <textarea
