@@ -1,18 +1,21 @@
 # VirtualMenu-Giacosa
 
-Comandos de ayuda para la configuracion de SASS
 
-/* Para inicializar NPM*/
-npm init  
-npm init -y (Crea todo con valores por defecto)
+A simple Web Page with HTML, CSS, SASS full responsive with effects. <br />
 
-/* Instalo node sass */
-npm install -D node-sass nodemon
+How to config SASS<br />
+/* Start Project*/
+npm init   <br />
+npm init -y (Crea todo con valore s por defecto) <br />
+
+/* Install SASS */
+npm install -D node-sass nodemon <br />
 
 
-/* Configuro Package.json e inserto dos lineas dentro de scripts */
-"build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
-"watch-css": "nodemons -e scss -x \"npm run build-css\""
+/* Configuro Package.json e inserto dos lineas dentro de scripts */ <br />
+"build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css", <br />
+"watch-css": "nodemons -e scss -x \"npm run build-css\"" <br />
+<br />
 
-/* Por ultimo para correr el sass*/
-npm run watch-css
+/* To run*/ <br />
+npm run watch-css <br />
